@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crud</title>
+
+  <link rel="stylesheet" href="all.min.css">
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container py-5  ">
+    <div class="w-75 m-auto ">
+      <h2 class=" fw-bold   text-center ">SYSTEM PRODUCTS MANAGEMENT :</h2>
+      <label for="producName">producName :</label>
+      <input class="form-control mt-2  " type="text" id="producName" name="producName">
+      <label for="producPrice">producPrice :</label>
+      <input class="form-control  mt-2" type="number" id="producPrice" name="producPrice">
+      <label for="producCatgory">producCatgory :</label>
+      <input class="form-control  mt-2" type="text" id="producCatgory" name="producCatgory">
+      <label for="producDescreption">producDescreption :</label>
+      <textarea class="form-control  mt-2" name="producDescreption" id="producDescreption" rows="2"></textarea>
+
+      <button onclick=addProduct() class="btn btn-outline-dark p-2 mt-4 ">AddProduct</button>
+      <button onclick=UpdateProduct() class="btn d-none  updateBtn btn-outline-info p-2  mt-4 ">UpdateProduct</button>
+    </div>
+  </div>
+
+  <div class="w-75 m-auto ">
+
+    <input type="search" placeholder="search by name...." class="form-control w-25 m-auto mb-4  " name="" id="search">
+
+
+
+    <table class="table ">
+      <thead>
+        <th>Index</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Category</th>
+        <th>Description</th>
+        <th>Delete</th>
+        <th>Update</th>
+      </thead>
+      <tbody id="tableData">
+
+
+
+
+      </tbody>
+
+
+
+
+
+
+
+
+
+
+    </table>
+
+    <p id="demo" class="d-none text-center text-danger fw-bolder ">No Result</p>
+
+
+
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="main.js"></script>
+</body>
+
+</html>
